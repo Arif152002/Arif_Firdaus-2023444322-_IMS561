@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	
+	    <style>
+	
+.about-me {
+    padding: 50px 20px;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+.about-me h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.about-me p {
+    margin-bottom: 20px; 
+}
+
+.btn-secondary {
+    background: #0077b6;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px; 
+    display: inline-block;
+}
+
+        .hero {
+            background: linear-gradient(to right, #0077b6, #00b4d8);
+            color: #fff;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .btn-primary {
+            background: #ff6f61;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .about-me {
+            padding: 50px 20px;
+            text-align: center;
+            background: #f4f4f4;
+        }
+
+        .about-me h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        .btn-secondary {
+            background: #0077b6;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+.portfolio-preview {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.portfolio-preview h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.portfolio-items {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+    flex-wrap: wrap; 
+    margin-top: 20px;
+}
+
+.portfolio-item {
+    width: 30%; 
+    text-align: center;
+    background: #f4f4f4; 
+    border: 2px solid #ddd;
+    border-radius: 8px; 
+    padding: 15px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-between; 
+    min-height: 350px; 
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* Image Styling */
+.project-image {
+    width: 100%; 
+    height: auto; 
+    max-width: 200px; 
+    border-radius: 8px; 
+    margin-bottom: 15px; 
+}
+
+.portfolio-item h3 {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.portfolio-item p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.portfolio-item a {
+    background: #0077b6;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 70%;
+  height: 45;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.7s ease;
+  background: linear-gradient(to bottom right, #d51849, #f06d85); 
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text1 {
+  color: white;
+  font-size: 80px;
+  font-family: Franklin Gothic Medium;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+		
+		</style>	
+</head>
+
+
+<body>
+    <!-- Navigation Bar -->
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Muhammad Arif Logo">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<center>
+<div class="container">
+  <img src="img/r23.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text1">Welcome To My Page</div>
+  </div>
+</div>
+</center>
+
+    <section class="hero">
+        <h1>Hello, I'm Muhammad Arif</h1>
+        <p>A passionate developer dedicated to creating intuitive and beautiful digital experiences.</p>
+        <a href="portfolio.html" class="btn-primary">Explore My Work</a>
+    </section>
+
+
+    <section class="about-me">
+        <h2>About Me</h2>
+        <p>I love building user-friendly, responsive, and scalable applications. My mission is to turn ideas into high-quality products that make a difference.</p>
+        <p>I enjoy learning about new tech trends, exploring the outdoors, and experimenting with new recipes in the kitchen.</p>
+        <a href="about.html" class="btn-secondary">Learn More</a>
+    </section>
+	
+	<br>
+	
+    <center><h1>My Featured Projects</h1></center>
+	
+	
+<marquee scrollamount="15" scrolldelay="75">
+    <section class="portfolio-preview">
+
+    <div class="portfolio-items">
+
+        <div class="portfolio-item">
+            <img src="img/deli.png" alt="Project ENT Report" class="project-image">
+            <h3>Project ENT Report</h3>
+            <p>my first ENT business</p>
+            <a href="project/ENT.pdf" target="_blank" class="btn-secondary">DeliCookies</a>
+        </div>
+        
+
+        <div class="portfolio-item">
+            <img src="img/teega.png" alt="Project Teega Snack" class="project-image">
+            <h3>Project Teega Snack</h3>
+            <p>selling snack to university student</p>
+            <a href="project/teega.pdf" target="_blank" class="btn-secondary">Teega Snack</a>
+        </div>
+        
+
+        <div class="portfolio-item">
+            <img src="img/arwan.png" alt="Project Arwan Tech" class="project-image">
+            <h3>Project ENT Arwan Tech</h3>
+            <p>My degree ENT project</p>
+            <a href="project/ArwanTech.pdf" target="_blank" class="btn-secondary">Arwan Tech</a>
+        </div>
+    </div>
+    
+</section>
+</marquee>
+
+<center><a href="portfolio.html" class="btn-secondary">See More Projects</a></center>
+
+<br>
+
+
+
+<br>
+
+
+    <footer>
+        <p>&copy; 2024 Muhammad Arif. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/arif-firdaus-a7962b259/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Arif152002/" target=" target="_blank"><i class="fab fa-github"></i></a>
+			<a href="https://www.instagram.com/muhdarif_f/" target="_blank"><i class="fab fa-instagram"></i></a>
+			
+        </div>
+		
+    </footer>
+	
+</body>
+</html>
+
+

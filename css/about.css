@@ -1,0 +1,197 @@
+
+.about {
+    padding: 2em;
+    background: linear-gradient(135deg, #f9f9f9, #e3e3e3);
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2em;
+    margin-bottom: 2em;
+}
+
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.bio {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.bio p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.bio p:hover {
+    color: #007bff;
+}
+
+h1, h2 {
+    color: #333;
+    font-weight: bold;
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+.skills-list li {
+    background: #444;
+    color: #fff;
+    padding: 0.5em 1.5em;
+    margin: 0.5em 0;
+    display: inline-block;
+    border-radius: 20px;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.skills-list li:hover {
+    background: #ff9800;
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(255, 152, 0, 0.4);
+}
+
+.biodata {
+    background-color: #f5f5f5;
+    padding: 30px 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.biodata-table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1em;
+}
+
+.biodata-table td {
+    padding: 12px 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
+}
+
+.biodata-table td:first-child {
+    font-weight: bold;
+    color: #9655E8;
+}
+
+.biodata-table tr:hover td {
+    background-color: #eee;
+}
+
+
+.favorites {
+    background: linear-gradient(135deg, #fff, #f9f9f9);
+    padding: 30px 20px;
+    margin-top: 30px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.favorite-title {
+    font-size: 40px;
+    color: white;
+    background-color: #9655E8;
+    padding: 10px 20px;
+    border-radius: 5px;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.favorites-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.favorites-list li {
+    margin: 10px 0;
+    animation: fadeUp 1s ease-in-out;
+}
+
+.favorites-list a {
+    text-decoration: none;
+    color: #9655E8;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.favorites-list a:hover {
+    transform: scale(1.1);
+    color: #0073e6;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

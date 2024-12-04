@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Muhammad Arif Logo">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main>
+        <section class="contact-section">
+            <h2>Contact Me</h2>
+            <p>I’d love to hear from you! Whether you have a project in mind, a question, or just want to connect, feel free to reach out.</p>
+
+            <form action="submit_contact_form.php" method="POST" class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+
+
+            <div class="contact-info">
+                <h3>Other Ways to Connect</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> <strong>Email:</strong> ariffirdaus080@gmail.com</li>
+                    <li><i class="fas fa-phone"></i> <strong>Phone:</strong> 012-4124220</li>
+                    <li><i class="fab fa-linkedin"></i> <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/arif-firdaus-a7962b259/" target="_blank">linkedin.com/in/Arif Firdaus</a></li>
+                    <li><i class="fab fa-github"></i> <strong>GitHub:</strong> <a href="https://github.com/Arif152002/" target="_blank">github.com/username</a></li>
+                </ul>
+            </div>
+	
+
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.995014647211!2d100.44790707447653!3d5.713853332043224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304b28adfa3c0e53%3A0xe310799cc09dac88!2sUiTM%20Kedah!5e0!3m2!1sen!2smy!4v1731167582283!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2024 Muhammad Arif. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/arif-firdaus-a7962b259/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Arif152002/" target=" target="_blank"><i class="fab fa-github"></i></a>
+			<a href="https://www.instagram.com/muhdarif_f/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <style>
+
+        .contact-section {
+            padding: 50px;
+            background: linear-gradient(135deg, #004b7c, #13e8e8);
+            color: #fff;
+            text-align: center;
+        }
+
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin: 20px auto;
+            max-width: 500px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-form input:focus, .contact-form textarea:focus {
+            border-color: #555;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .submit-button {
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .submit-button:hover {
+            background-color: #444;
+        }
+
+        .contact-info {
+            margin-top: 30px;
+            text-align: left;
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .contact-info ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-info li {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-info i {
+            color: #ffa;
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+
+        /* Map Styling */
+        .map-container {
+            margin-top: 30px;
+        }
+
+        iframe {
+            width: 100%;
+            border: none;
+        }
+    </style>
+</body>
+</html>
+
